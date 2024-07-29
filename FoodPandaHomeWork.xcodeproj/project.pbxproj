@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		512C14082C5384790015A3DA /* OrderViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512C14072C5384790015A3DA /* OrderViewCard.swift */; };
+		512C140A2C5384D60015A3DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512C14092C5384D60015A3DA /* CardView.swift */; };
+		512C140D2C5385160015A3DA /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512C140C2C5385160015A3DA /* OrderModel.swift */; };
+		512C140F2C53873E0015A3DA /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512C140E2C53873E0015A3DA /* FavoriteView.swift */; };
 		517B0CF82C51F864002AE091 /* FoodPandaHomeWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B0CF72C51F864002AE091 /* FoodPandaHomeWorkApp.swift */; };
 		517B0CFA2C51F864002AE091 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B0CF92C51F864002AE091 /* ContentView.swift */; };
 		517B0CFC2C51F869002AE091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517B0CFB2C51F869002AE091 /* Assets.xcassets */; };
 		517B0CFF2C51F869002AE091 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517B0CFE2C51F869002AE091 /* Preview Assets.xcassets */; };
-		517B0D082C51F8A8002AE091 /* CustomerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517B0D072C51F8A8002AE091 /* CustomerCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		512C14072C5384790015A3DA /* OrderViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewCard.swift; sourceTree = "<group>"; };
+		512C14092C5384D60015A3DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		512C140C2C5385160015A3DA /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		512C140E2C53873E0015A3DA /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		517B0CF42C51F864002AE091 /* FoodPandaHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPandaHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517B0CF72C51F864002AE091 /* FoodPandaHomeWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPandaHomeWorkApp.swift; sourceTree = "<group>"; };
 		517B0CF92C51F864002AE091 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		517B0CFB2C51F869002AE091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		517B0CFE2C51F869002AE091 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		517B0D072C51F8A8002AE091 /* CustomerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512C140B2C5385040015A3DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				512C140C2C5385160015A3DA /* OrderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		517B0CEB2C51F864002AE091 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +67,7 @@
 		517B0CF62C51F864002AE091 /* FoodPandaHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				512C140B2C5385040015A3DA /* Model */,
 				517B0D062C51F890002AE091 /* View */,
 				517B0D052C51F87F002AE091 /* Helper */,
 				517B0CF72C51F864002AE091 /* FoodPandaHomeWorkApp.swift */,
@@ -73,7 +88,8 @@
 		517B0D052C51F87F002AE091 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				517B0D072C51F8A8002AE091 /* CustomerCard.swift */,
+				512C14072C5384790015A3DA /* OrderViewCard.swift */,
+				512C14092C5384D60015A3DA /* CardView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -82,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				517B0CF92C51F864002AE091 /* ContentView.swift */,
+				512C140E2C53873E0015A3DA /* FavoriteView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512C14082C5384790015A3DA /* OrderViewCard.swift in Sources */,
 				517B0CFA2C51F864002AE091 /* ContentView.swift in Sources */,
+				512C140D2C5385160015A3DA /* OrderModel.swift in Sources */,
+				512C140A2C5384D60015A3DA /* CardView.swift in Sources */,
+				512C140F2C53873E0015A3DA /* FavoriteView.swift in Sources */,
 				517B0CF82C51F864002AE091 /* FoodPandaHomeWorkApp.swift in Sources */,
-				517B0D082C51F8A8002AE091 /* CustomerCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
